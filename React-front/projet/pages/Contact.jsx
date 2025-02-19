@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Contact() {
+  
   return (
     <>
       <div className="contact">
@@ -21,7 +22,8 @@ function Contact() {
             </div>
           </section>
         </main>
-      </div>
+      </div> 
+    
 
 
       </>

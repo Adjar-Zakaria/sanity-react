@@ -40,7 +40,23 @@ export default defineType({
           {title: 'Emphasis', value: 'em'},
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
-        annotations: [
+        annotations: [ 
+          /*
+          npm install --legacy-peer-deps --save @sanity/color-input'
+          npm install --save react-is 
+
+          //Add it as a plugin in sanity.config.ts: 
+          
+          import {colorInput} from '@sanity/color-input'
+          export default defineConfig({
+           ...
+           plugins: [colorInput()],
+          })
+          */
+
+
+          
+          {name: 'color', title: 'Color', type: 'color'},
           {
             title: 'URL',
             name: 'link',

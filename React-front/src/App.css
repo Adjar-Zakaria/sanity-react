@@ -292,9 +292,9 @@ footer{
             font-style: normal;
           }
           .description p , span{
-            line-height: 1.5rem;
+            line-height: 1.6;
             padding: 10px 0;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-family: 'Didact Gothic';
             font-weight: 400;
             font-style: normal;
@@ -432,6 +432,8 @@ footer{
                   display: block;
                 min-height:270px ;
                 height:auto ;
+                object-fit: contain;
+
 
 
                 }
@@ -621,7 +623,7 @@ footer{
       margin-left: auto;
       margin-right: auto;
       width:  calc(100% / 1 - 20px) !important;
-      overflow: scroll;
+      overflow:hidden;
     }
     .about {
 

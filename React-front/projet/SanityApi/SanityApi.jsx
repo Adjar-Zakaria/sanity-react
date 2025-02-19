@@ -1,4 +1,5 @@
 import sanityClient from "../../../sanity-CMS/.sanity/runtime/Client.js";
+
   export const getAlldata = async () => {
     const res = await sanityClient.fetch(`*[_type == "post"]{
       _id,
@@ -22,6 +23,21 @@ import sanityClient from "../../../sanity-CMS/.sanity/runtime/Client.js";
       "imageUrl": mainImage.asset->url ,
        "categories" : categories[]->title ,
         "author" : author->name}`);
+        return res;
+    };
+
+    export const getaboutpage = async () => {
+      const res = await sanityClient.fetch(`*[_type == "about"][0]{
+        _id,
+        title,
+        body,
+        "imageUrl": mainImage.asset->url ,
+        socialmedia,
+        titleSection2, 
+        "gallerySection2": gallerySection2[].asset->url ,
+        "gallerySection3": gallerySection3[].asset->url 
+        
+        }`);
         return res;
     };
 

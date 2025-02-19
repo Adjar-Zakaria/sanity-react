@@ -63,7 +63,6 @@ function PostsPage() {
 
               </section>
             </main>
-          </div>)
-        }
+    </div>)} 
     </>)
 }export default PostsPage

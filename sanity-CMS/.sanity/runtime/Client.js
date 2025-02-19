@@ -1,7 +1,12 @@
 import {createClient} from "@sanity/client";
+//import {ProjectId , Dataset} from '../../environment.js'
 
 export default createClient({
-  projectId: "ru5lf6ow", // find this at manage.sanity.io or in your sanity.json
-  dataset: "production", // this is from those question during 'sanity init'
+
+  //projectId: ProjectId,  
+  //dataset: Dataset, 
+  
+  projectId: 'ru5lf6ow',  
+  dataset: 'production', 
   useCdn: true,
 });
